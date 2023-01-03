@@ -16,22 +16,26 @@ li {
 .header {
     display: flex;
     flex-direction: row;
+    position: relative;
 }
 .banniere {
     width: 100%;
     height: auto;
-
 }
+.navigation{
+  display: flex;
+  position: absolute;
+  width: 100%;
 
-.header {
-    position: relative;
+
 }
 .recherche {
     position: absolute;
     display: flex;
     flex-direction: row;
-    margin-top: 6px;
+    margin-top: 23px;
     left: 84%;
+    justify-content: flex-end;
 }
 
 .espace {
@@ -48,7 +52,7 @@ li {
     position: absolute;
     left: 0;
     width: 100%;
-
+    
 }
 
 .rechercher>button {
@@ -57,19 +61,26 @@ li {
 
 }
 .logo{
+  filter: invert(100%);
   width: 5vw;
   height : auto; 
+  }
+  .logo:hover{
+    filter: invert(0%);
   }
   
 /* construction du menu déroulant */
 
 
 .navbar {
+  margin: 4px;
   display: flex;
   overflow: hidden;
   justify-content: flex-end;
-  width: 100%;
-  justify-content: space-around;
+  width: 65%;
+  justify-content: space-between;
+  align-items: center;
+  
 }
 
 .subnav {
@@ -98,7 +109,7 @@ li {
   font-size: 16px;
   border: none;
   outline: none;
-  color: black;
+  color: white;
   margin: 0;
 }
 
@@ -119,7 +130,7 @@ li {
   background-color: #7E8185;
   margin-left: 1px;
   top: 1%;
-  right: 100%;
+  left: 100%;
   min-width: fit-content;
   z-index: 1;
 }
@@ -132,7 +143,7 @@ li {
 
 .navbar a:hover,
 .subnav:hover .subnava {
-  background-color: #7E8185;
+  /* background-color: #7E8185; */
 }
 
 .subnav:hover .subnav-content {
