@@ -3,25 +3,179 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    
+
 }
-a{
+a {
     text-decoration: none;
 }
-li{
+li {
     list-style: none;
 }
+
 /* header */
-.banniere{
+.header {
+    display: flex;
+    flex-direction: row;
+}
+.banniere {
     width: 100%;
     height: auto;
-    
-}
-#logo{
-    width: 10vw;
-    border-radius: 100vw;
-}
-.header{
-position: relative;
+
 }
 
+.header {
+    position: relative;
+}
+.recherche {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    margin-top: 6px;
+    left: 84%;
+}
+
+.espace {
+    margin: 2px;
+    color: white;
+}
+
+.rechercher {
+    position: relative;
+
+}
+
+.rechercher input {
+    position: absolute;
+    left: 0;
+    width: 100%;
+
+}
+
+.rechercher>button {
+    position: absolute;
+    top: 58px;
+
+}
+.logo{
+  width: 5vw;
+  height : auto; 
+  }
+  
+/* construction du menu déroulant */
+
+
+.navbar {
+  display: flex;
+  overflow: hidden;
+  justify-content: flex-end;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.subnav {
+  overflow: hidden;
+  float: left;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  background-color: #7E8185;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.subnav .subnava {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  margin: 0;
+}
+
+.subnava2 {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: -16px -16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.sousmenu {
+  display: none;
+  position: absolute;
+  background-color: #7E8185;
+  margin-left: 1px;
+  top: 1%;
+  right: 100%;
+  min-width: fit-content;
+  z-index: 1;
+}
+.sousmenu a {
+  float: left;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.navbar a:hover,
+.subnav:hover .subnava {
+  background-color: #7E8185;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+.subnav .subnav-content-subnav:hover .sousmenu {
+  display: block;
+}
+
+  /* Footer */
+  .footer{
+    padding: 12px;
+    background-color: #77e2a7;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  
+  .reseaux{
+    width: 20%;
+    display: flex;
+    justify-content: space-between; 
+  }
+  /* carte avec epingle+hover */
+  .carte img{
+    width: 100%;
+  }
+  .carte img{
+    position: relative;
+  }
+
+  .carte{
+    position: relative;
+  }
+  /* #algerie, #france, #cameroun, #italie, #irlande, #dubain, #espagne, #allemagne, #croatie{
+    position: absolute;
+  } */
+
+  #algerie {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    
+  }
+ 

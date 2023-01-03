@@ -6,33 +6,155 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/all.css">
     <title>Nos voyages</title>
 </head>
 
 <body>
     <header>
         <div class="header">
-            
-        <img class="banniere" src="img/bannière4.jpg" alt="photo_d'un_chemin">
-     
-        <input type="text">
-        <p>Fr</p>
-        <p>En</p>
-    </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html"><img id="logo" src="/img/logo_terre.png" alt="logo_terre"></a></li>
-                <li>Nos expériences</li>
-                <li>Nos prochains voyages</li>
-                <li>FAQ</li>
-            </ul>
-        </nav>
+            <img class="banniere" src="img/bannière4.jpg" alt="photo_d'un_chemin">
+            <div class="recherche">
+                <form class="espace" class="rechercher" method="GET">
+                    <input type="text" placeholder="Rechercher">
+                    <button type="submit">Q</button>
+                </form>
+                <div class="espace">
+                    <p> Fr</p>
+                </div>
+                <div class="espace">
+                    <p>En</p>
+                </div>
+            </div>
+        </div>
+        <ul class="navbar">
+            <a href=""> <img class="logo" src="/img/logo_terre.png" alt=""></a>
+
+            <li class="subnav">
+                <a class="subnava" href="#">Les voyageurs</a>
+                <ul class="subnav-content">
+                    <li class="subnav-content-subnav">
+                        <a class="subnava2" href="#"> Bertho</a>
+                        <ul class="sousmenu">
+                            <li>
+                                <a href="#"> Allemagne </a>
+                            </li>
+                            <li> <a href="#"> Cameroun </a></li>
+                            <li> <a href="#"> Italie </a></li>
+                        </ul>
+                    </li>
+                    <li class="subnav-content-subnav"><a class="subnava2" href="#"> Camille </a>
+                        <ul class="sousmenu">
+                            <li><a href="#">Croatie</a></li>
+                            <li><a href="#">Espagne</a></li>
+                            <li><a href="#">Irlande</a></li>
+                        </ul>
+                    </li>
+                    <li class="subnav-content-subnav"><a class="subnava2" href="#"> Wahil</a>
+                        <ul class="sousmenu">
+                            <li><a href="#">Algérie</a></li>
+                            <li><a href="#">Dubai</a></li>
+                            <li><a href="#">France</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="subnav">
+                <a class="subnava" href="#">Nos experiences</a>
+                <ul class="subnav-content">
+                    <li class="subnav-content-subnav">
+                        <a class="subnava2" href="#">Afrique</a>
+                        <ul class="sousmenu">
+                            <li><a href="#">Algérie</a></li>
+                            <li><a href="#">Cameroun</a></li>
+                        </ul>
+                    </li>
+                    <li class="subnav-content-subnav">
+                        <a class="subnava2" href="#">Europe</a>
+                        <ul class="sousmenu">
+                            <li><a href="#">Allemagne</a></li>
+                            <li><a href="#">Croatie</a></li>
+                            <li><a href="#">Espagne</a></li>
+                            <li><a href="#">France</a></li>
+                            <li><a href="#">Irlande</a></li>
+                            <li><a href="#">Italie</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="subnav-content-subnav">
+                        <a class="subnava2" href="#">Emirats Arabe</a>
+                        <ul class="sousmenu">
+                            <li><a href="#">Dubai</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+
     </header>
     <main>
+        <h1>Introduction</h1>
+        <div class="carte">
+            <img src="/img/Carte.jpg" alt="">
+            <i id="algerie" class="fa-solid fa-location-dot "></i>
+            <i id="allemagne" class="fa-solid fa-location-dot"></i>
+            <i id="croatie" class="fa-solid fa-location-dot"></i>
+            <i id="espagne" class="fa-solid fa-location-dot"></i>
+            <i id="france" class="fa-solid fa-location-dot"></i>
+            <i id="dubai" class="fa-solid fa-location-dot"></i>
+            <i id="italie" class="fa-solid fa-location-dot"></i>
+            <i id="cameroun" class="fa-solid fa-location-dot"></i>
+            <i id="irlande" class="fa-solid fa-location-dot"></i>
+        </div>
 
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <div class="reseaux">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <img class="logo" src="/img/logo_fb.png" alt="logo_fb">
+        </div>
+        <div class="lesvoyageurs">
+            <ul>
+                <h2>Les voyageurs</h2>
+                <p>Bertho</p>
+                <p>Camille</p>
+                <p>Wahil</p>
+            </ul>
+        </div>
+        <div class="nosexperiences">
+
+
+            <h3>Afrique</h3>
+            <ul>
+                <li>Algérie</li>
+                <li>Cameroun</li>
+            </ul>
+            <h3>Emirats Arabe</h3>
+            <ul>
+                <li>Dubai</li>
+            </ul>
+
+            <h3>Europe</h3>
+            <ul>
+                <li>Allemagne</li>
+                <li>Croatie</li>
+                <li>Espagne</li>
+                <li>France</li>
+                <li>Irlande</li>
+                <li>Italie</li>
+                <li>Dubai</li>
+            </ul>
+
+        </div>
+        <div class="FAQ">
+            <h2>FAQ</h2>
+            <h2>Politique de confidentialité</h2>
+
+        </div>
+    </footer>
 
 </body>
 
