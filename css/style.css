@@ -92,7 +92,6 @@ li {
 }
 /* construction du menu déroulant */
 
-
 .navbar {
   margin: 4px;
   display: flex;
@@ -163,10 +162,15 @@ li {
 
 .subnav:hover .subnav-content {
   display: block;
+ 
 }
 
 .subnav .subnav-content-subnav:hover .sousmenu {
   display: block;
+}
+.subnava2:hover, .sousmenu a:hover{
+  background-color: white;
+  color:  #bf9858;
 }
 
 /* Footer */
@@ -179,13 +183,18 @@ li {
 
 }
 footer{
-  background-image: url(/img/footer.jpeg) ;
+background-color: #bf9858;
   width: 100%;
 }
 
 .reseaux {
-  width: 10%;
+  width: 6%;
   display: flex;
+  justify-content: space-around;
+}
+.nosexperiences{
+  display: flex;
+  width: 25%;
   justify-content: space-around;
 }
 /* INDEX */
