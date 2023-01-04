@@ -1,0 +1,238 @@
+@media screen and (min-width: 1440px) {
+    main .bg {
+        height: 500px;
+    }
+}
+@media screen and (min-width: 1740px) {
+    main .bg {
+        height: 700px;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    /* --- style for all --- */
+    .container {
+        max-width: 992px !important;
+        width: 100% !important;
+    }
+    /* -- Start Header Style -- */
+    
+    /* -- End Header Style -- */
+
+
+    /* -- Start Présentation Style -- */
+
+    .présentation .description-box .img-box {
+        width: 500px;
+    }
+    
+    .présentation .description-box .descrp {
+        width: 450px;
+    }
+    /* -- End Présentation Style -- */
+
+    /* --- Start Monimos Style --- */
+    .repères .container .monimos-box .monimos {
+        width: 46%;
+    }
+    /* --- End Monimos Style --- */
+
+
+    /* --- Start Plates Style --- */
+    .plates .container .plates-box .plat .info-box {
+        width: 520px;
+    }
+    /* --- End Plates Style --- */
+
+}
+
+
+@media screen and (max-width: 992px) {
+    /* --- style for all --- */
+    .container {
+        max-width: 768px !important;
+        width: 100% !important;
+    }
+
+    main .bg {
+        height: 250px;
+    }
+
+    /* -- Start Header Style -- */
+    
+    /* -- End Header Style -- */
+
+
+    /* -- Start Présentation Style -- */
+
+    .présentation .description-box .img-box {
+        width: 400px;
+    }
+    
+    .présentation .description-box .descrp {
+        width: 300px;
+    }
+    /* -- End Présentation Style -- */
+
+    /* ----- Start Plates Style ----- */
+    .plates .container .plates-box .plat .img-box {
+        width: 100%;
+    }
+
+    .plates .container .plates-box .plat .info-box {
+        width: 100%;
+    }
+    /* ----- End Plates Style ----- */
+}
+
+
+@media screen and (max-width: 768px) {
+    /* --- style for all --- */
+    .container {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+    /* -- Start Header Style -- */
+    
+    /* -- End Header Style -- */
+
+
+    /* -- Start Présentation Style -- */
+
+    .présentation .description-box .img-box {
+        width: 100%;
+    }
+    
+    .présentation .description-box .descrp {
+        width: 100%;
+    }
+    /* -- End Présentation Style -- */
+
+    /* --- Start Monimos Style --- */
+    .repères .container .monimos-box .monimos {
+        width: 100%;
+    }
+    
+    .repères .container .monimos-box .monimos .img-box {
+        height: 450px;
+    }
+
+    /* --- End Monimos Style --- */
+}
+
+
+@media screen and (max-width: 578px) {
+    /* --- style for all --- */
+    .container {
+        
+    }
+    /* --- For Title h2 --- */
+    :is(.title-box) h2 {
+        padding: 10px 5px !important;
+    }
+
+    :is(.title-box) h2::before {
+        top: calc(50% - 6.5px); 
+        width: 13px;
+        height: 13px;
+        left: -25px;
+    }
+
+    :is(.title-box) h2::after {
+        top: calc(50% - 6.5px); 
+        width: 13px;
+        height: 13px;
+        right: -25px;
+    }
+
+    main .bg {
+        height: 200px;
+    }
+
+    /* -- Start Header Style -- */
+    
+    /* -- End Header Style -- */
+
+
+    /* -- Start Présentation Style -- */
+
+
+    /* -- End Présentation Style -- */
+
+    /* --- Start Monimos Style --- */
+    .repères .container .monimos-box .monimos .img-box {
+        height: 300px;
+    }
+
+    /* --- End Monimos Style --- */
+}
+
+
+@media screen and (max-width: 420px) {
+    /* --- style for all --- */
+    .container {
+        
+    }
+    /* -- Start Header Style -- */
+    
+    /* -- End Header Style -- */
+
+
+    /* -- Start Présentation Style -- */
+
+
+    /* -- End Présentation Style -- */
+}
+
+
+@media screen and (max-width: 380px) {
+    /* --- style for all --- */
+    .container {
+        
+    }
+    /* --- For Title h2 --- */
+    :is(.title-box) h2 {
+        font-size: 1.3em;
+    }
+    /* -- Start Header Style -- */
+    
+    /* -- End Header Style -- */
+
+
+    /* -- Start Présentation Style -- */
+
+
+    /* -- End Présentation Style -- */
+    
+    /* --- Start Monimos Style --- */
+    .repères .container .monimos-box .monimos .img-box {
+        height: 250px;
+    }
+
+    /* --- End Monimos Style --- */
+}
+
+
+@media screen and (max-width: 320px) {
+    /* --- style for all --- */
+    .container {
+        
+    }
+    /* -- Start Header Style -- */
+    
+    /* -- End Header Style -- */
+
+
+    /* -- Start Présentation Style -- */
+
+
+    /* -- End Présentation Style -- */
+    
+    /* --- Start Monimos Style --- */
+    .repères .container .monimos-box .monimos .img-box {
+        height: 200px;
+    }
+
+    /* --- End Monimos Style --- */
+}
