@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,200&family=Raleway:ital,wght@0,300;0,700;1,600&display=swap');
+:root{
+    --nunito:"Nunito";
+}
+body{
+    font-family: var(--nunito);
+}
+
+
 * {
   padding: 0;
   margin: 0;
@@ -60,9 +69,12 @@ li {
 
 .rechercher>button {
   position: absolute;
-  /* top: 58px; */
+  top: 58px;
 }
-
+.loupe{
+ width: 10px;
+}
+ 
 .logo {
   filter: invert(100%);
   width: 5vw;
@@ -72,7 +84,12 @@ li {
 .logo:hover {
   filter: invert(0%);
 }
-
+/* MAIN INDEX */
+.citation{
+  text-align: center;
+  margin: 25vh;
+  font-style: italic;
+}
 /* construction du menu déroulant */
 
 
@@ -154,11 +171,16 @@ li {
 
 /* Footer */
 .footer {
+
   padding: 12px;
-  background-color: #77e2a7;
+  color: white;
   display: flex;
   justify-content: space-between;
 
+}
+footer{
+  background-image: url(/img/footer.jpeg) ;
+  width: 100%;
 }
 
 .reseaux {
