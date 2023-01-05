@@ -6,6 +6,11 @@ body{
     font-family: var(--nunito);
 }
 
+.container {
+  width: 1140px;
+  margin: auto;
+  padding: 10px;
+}
 .flex-r {
   display: flex;
   justify-content: space-evenly;
@@ -48,74 +53,29 @@ header {
 
 header .container {
   align-items: flex-start;
-  width: 100%;
-}
-
-header .container .recherche {
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  margin-top: 5vh;
-  left: 84vw;
-  justify-content: flex-end;
-  width:15%;
-}
-
-header .container .rechercher {
-  position: relative;
-  margin: 2px;
-  color: white;
-}
-.espace{
-  color: white;
-  margin: 1px;
-
-}
-.rechercher input {
-  position: absolute;
-  left: 0;
-  width: 100%;
-}
-
-.rechercher>button {
-  position: absolute;
-  top: 58px;
-}
-.loupe{
- width: 10px;
-}
- 
-.logo {
-  filter: invert(100%);
-  width: 5vw;
-  height: auto;
-}
-
-.logo:hover {
-  filter: invert(0%);
-}
-/* MAIN INDEX */
-.citation{
-  text-align: center;
-  margin: 25vh;
-  font-style: italic;
-}
-/* construction du menu déroulant */
-
-.navbar {
-  margin: 4px;
-  display: flex;
-  overflow: hidden;
-  justify-content: flex-end;
-  width: 65%;
   justify-content: space-between;
-  align-items: center;
+  height: 80px;
+}
 
+
+/* ------ Start Style Menu ----- */
+.navbar {
+  height: 100%;
+}
+.navbar ul {
+  gap: 150px;
+  height: 100%;
 }
 
 .subnav {
   overflow: hidden;
   float: left;
+}
+
+.subnav .subnava {
+  font-size: 1.3em;
+  color: white;
+  font-weight: bold;
 }
 
 .subnav-content {
@@ -134,13 +94,6 @@ header .container .rechercher {
   text-align: left;
 }
 
-.subnav .subnava {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: white;
-  margin: 0;
-}
 
 .subnava2 {
   font-size: 16px;
@@ -171,8 +124,8 @@ header .container .rechercher {
 }
 
 .subnav:hover .subnav-content {
-  display: block;
- 
+    display: block;
+
 }
 
 .subnav .subnav-content-subnav:hover .sousmenu {
@@ -182,6 +135,48 @@ header .container .rechercher {
   background-color: white;
   color:  #bf9858;
 }
+/* ------ End Style Menu ----- */
+
+/* ----- Start Style bar de recherche ----- */
+header .container .recherche {
+  width: auto;
+  height: 100%;
+}
+
+.rch-forme {
+  height: 30px;
+  color: white;
+  margin: 1px;
+}
+
+header .container .recherche input[type="text"] {
+  width: 150px;
+  height: 100%;
+  padding: 10px;
+  outline: none;
+  border: 4px solid white;
+}
+
+
+/* ----- End Style bar de recherche ----- */
+
+
+.logo {
+  filter: invert(100%);
+  width: 5vw;
+  height: auto;
+}
+
+.logo:hover {
+  filter: invert(0%);
+}
+/* MAIN INDEX */
+.citation{
+  text-align: center;
+  margin: 25vh;
+  font-style: italic;
+}
+/* construction du menu déroulant */
 
 /* Footer */
 .footer {
