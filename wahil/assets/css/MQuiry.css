@@ -248,9 +248,8 @@ body {
         
     }
 
-
     /* ----- Start Style Header ----- */
-    header {
+    /* header {
         height: 100px !important;
     }
 
@@ -291,9 +290,7 @@ body {
 
     header .container .first-ul .first-li .second-ul {
         translate: 0 12px !important;
-    }
-    
-
+    } */
     /* ----- End Style Header ----- */
 
 
@@ -466,7 +463,7 @@ body {
 
 
 /* --------------- Style Header ---------------- */
-header {
+/* header {
     width: 100%;
     background: #424242;
     height: 80px;
@@ -477,8 +474,8 @@ header .container {
     justify-content: space-between;
 }
 
-/* --- Start logo tyle --- */
-header .container .logo-box {
+/* --- Start logo Style --- */
+/* header .container .logo-box {
     width: 60px;
     height: 100%;
 }
@@ -490,9 +487,9 @@ header .container .logo-box a {
 header .container .logo-box a img {
     width: 100%;
     filter: invert(100%);
-}
+} */
 /* --- End logo tyle --- */
-
+/* 
 header .container .first-ul {
     gap: 30px;
 }
@@ -544,10 +541,10 @@ header .container .first-ul .first-li .second-ul .second-li .last-ul .last-li a 
     display: block;
     color: white;
     padding: 10px;
-}
+} */
 
 /* ----- hover menu ----- */
-header .container .first-ul .first-li::after {
+/* header .container .first-ul .first-li::after {
     position: absolute;
     content: "";
     top: 20px;
@@ -569,4 +566,4 @@ header .container .first-ul .first-li .second-ul .second-li:hover .last-ul {
 
 header .container .first-ul .first-li .second-ul .second-li .last-ul .last-li:hover {
     background: #000;
-}
+} */
