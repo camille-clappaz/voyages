@@ -11,15 +11,83 @@
         <link rel="stylesheet" href="assets/css/all.css">
         <link rel="stylesheet" href="assets/css/MQuiry.css">
         <link rel="icon" href="assets/img/icon-algérie.png">
+        <link rel="stylesheet" href="../css/style.css">
     </head>
-    <body> 
+    <body id="body"> 
         <header class="flex-r">
-            <div class="container">
-                
+            <div class="container flex-r">
+                <div class="logo-box">
+                    <a href="../index.html"><img class="logo-w" src="assets/img/logo_terre.png" alt="logo"></a>
+                </div>
+                <nav class="menu">
+                    <ul class="flex-r first-ul">
+                        <li class="first-li acceill-li">
+                            <a href="../index.html"><span>Accueill</span></a>
+                        </li>
+                        <li class="first-li">
+                            <span>Continents</span>
+                            <ul class="second-ul">
+                                <li class="second-li">
+                                    <span>Afrique</span>
+                                    <ul class="last-ul">
+                                        <li class="last-li"><a href="#">Algérie</a></li>
+                                        <li class="last-li"><a href="#">Camérone</a></li>
+                                    </ul>
+                                </li>
+                                <li class="second-li">
+                                    <span>Europe</span>
+                                    <ul class="last-ul">
+                                        <li class="last-li"><a href="#">Allemagne</a></li>
+                                        <li class="last-li"><a href="#">Croatie</a></li>
+                                        <li class="last-li"><a href="#">Espagne</a></li>
+                                        <li class="last-li"><a href="france.html">France</a></li>
+                                        <li class="last-li"><a href="#">Irlande</a></li>
+                                        <li class="last-li"><a href="#">Italie</a></li>
+                                    </ul>
+                                </li>
+                                <li class="second-li">
+                                    <span>Asie</span>
+                                    <ul class="last-ul">
+                                        <li class="last-li"><a href="dubai.html">Emirats-Arabe</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="first-li">
+                            <span>Personnes</span>
+                            <ul class="second-ul">
+                                <li class="second-li">
+                                    <span>Camille</span>
+                                    <ul class="last-ul">
+                                        <li class="last-li"><a href="#">Croatie</a></li>
+                                        <li class="last-li"><a href="#">Espagne</a></li>
+                                        <li class="last-li"><a href="#">Irlande</a></li>
+                                    </ul>
+                                </li>
+                                <li class="second-li">
+                                    <span>Bertho</span>
+                                    <ul class="last-ul">
+                                        <li class="last-li"><a href="#">Italie</a></li>
+                                        <li class="last-li"><a href="#">Cameroun</a></li>
+                                        <li class="last-li"><a href="#">Allemagne</a></li>
+                                    </ul>
+                                </li>
+                                <li class="second-li">
+                                    <span>Wahil</span>
+                                    <ul class="last-ul">
+                                        <li class="last-li"><a href="#">Algérie</a></li>
+                                        <li class="last-li"><a href="dubai.html">Emirats_Arabe</a></li>
+                                        <li class="last-li"><a href="france.html">France</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </header>
-        <main>
 
+        <main>
             <!-- Start Présentation -->
             <section class="présentation">
                 <div class="container flex-c">
@@ -28,10 +96,11 @@
                     </div>
                     <ul class="flex-r">
                         <li class="info"><i class="fa-solid fa-globe"></i>Continent <span>Afrique</span></li>
-                        <li class="info"><i class="fa-regular fa-user"></i>Population <span>44.6 hab</span></li>
+                        <li class="info"><i class="fa-regular fa-user"></i>Population <span>44.6m hab</span></li>
                         <li class="info"><i class="fa-solid fa-city"></i>Capitale <span>Alger</span></li>
-                        <li class="info"><i class="fa-solid fa-earth-africa"></i>supèrficie <span>2 381 741 km</span></li>
+                        <li class="info"><i class="fa-solid fa-earth-africa"></i>supèrficie <span>2 381 741 km²</span></li>
                         <li class="info"><i class="fa-solid fa-earth-africa"></i>Fête <span>01/11/2023</span></li>
+                        <li class="info"><i class="fa-solid fa-dollar-sign"></i>Monnaie <span>Dinar algérien</span></li>
                     </ul>
                     <article class="description-box flex-r">
                         <div class="img-box">
@@ -54,7 +123,11 @@
                     <div class="monimos-box flex-r">
                         <article class="monimos">
                             <div class="img-box">
-                                <img src="assets/img/mémorial-du-Martyr.jpg" alt="mémorial du Martyr">
+                                <img src="assets/img/mémorial-du-Martyr-2.jpg" alt="mémorial du Martyr">
+                                <div class="plus-info-box">
+                                    <p>Début de la construction  : <span>15 novembre 1981/1982</span></p>
+                                    <p>Date d'ouverture : <span>xx février 1986</span></p>
+                                </div>
                             </div>
                             <div class="info-box">
                                 <h3>1- mémorial du Martyr</h3>
@@ -65,6 +138,10 @@
                         <article class="monimos">
                             <div class="img-box">
                                 <img src="assets/img/Casbah-d-Alger.jpg" alt="Casbah d'Alger">
+                                <div class="plus-info-box">
+                                    <p>Début de la construction  : <span> Xe siècle/XVIe siècle</span></p>
+                                    <p>Année d’inscription : <span>1992 (16e session)</span></p>
+                                </div>
                             </div>
                             <div class="info-box">
                                 <h3>2- Casbah d'Alger</h3>
@@ -75,6 +152,10 @@
                         <article class="monimos">
                             <div class="img-box">
                                 <img src="assets/img/grand-mosquée.jpg" alt="Grande Mosquée d'Alger">
+                                <div class="plus-info-box">
+                                    <p>Début de la construction  : <span>16 août 2012</span></p>
+                                    <p>Date d'ouverture : <span>29 avril 2019</span></p>
+                                </div>
                             </div>
                             <div class="info-box">
                                 <h3>3- Grande Mosquée d'Alger</h3>
@@ -135,30 +216,9 @@
                 
             </div>
         </footer>
+        <div class="flesh-up-box">
+            <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
-
-
-<!-- <article class="présentation">
-    <h2>Histoire de l'Algérie</h2>
-    <p>L'histoire de l'Algérie s'insère dans l'histoire plus large du Maghreb et remonte à des millénaires. Dans l'Antiquité, le territoire algérien connaît la formation des royaumes numides avant de passer sous la domination partielle des Romains, des Vandales, des Byzantins et des principautés berbères indépendantes1.
-    Le viie siècle marque le début de l'islamisation puis l'arabisation partielle de la population. Le Maghreb central connaît alors plusieurs dynasties locales : Rostémides (767-909), Zirides (972-1148), Hammadides (1014-1152), Zianides (1235-1556) et des périodes d'intégration dans des groupements impériaux plus larges : Omeyyades (au viiie siècle), Fatimides (au xe siècle), Almoravides (au xie siècle), Almohades (au xiie siècle)L 1
-    L'Algérie contemporaine commence à se constituer territorialement au début de la régence d'Alger, soit au xvie siècle. La colonisation française bouleverse la formation sociale existante et cause la destruction d'une grande partie patrimoine religieux. L'émergence, au début du xxe siècle, d'un mouvement national mène au déclenchement de la guerre d'Algérie en 1954, une insurrection armée qui s'achève par l'indépendance du pays en 1962, et la constitution de l'État-nation actuelL 1.
-    </p>
-</article>
-<article class="info-box">
-    <h2>Information : </h2>
-    <h3>population : </h3>
-    <p>A ce rythme de croissance de l'année 2020, la population résidente totale atteindrait 45,4 millions au 1er janvier 2022, selon les prévisions de l'office.</p>
-</article> -->
-
-<!-- 
-<section class="repères">
-    <div class="container">
-        <article class="repère">
-            <div class="img-box">
-                <img src="img/">
-            </div>
-        </article>
-    </div>
-</section> -->

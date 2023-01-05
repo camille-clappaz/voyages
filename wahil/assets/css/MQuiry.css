@@ -1,6 +1,93 @@
+/* ----- Start style pour toutes les pages ---- */
+body {
+    position: relative;
+}
+
+.ds-blk {
+    display: block !important;
+}
+
+.repères .container .monimos-box .monimos .img-box .plus-info-box {
+    position: absolute;
+    background-color: rgb(5, 5, 5);
+    width: 100%;
+    height: 0px;
+    bottom: 0;
+    z-index: 9;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    opacity: 75%;
+    color: white;
+}
+
+.repères .container .monimos-box .monimos .img-box .plus-info-box p {
+    padding: 10px 0 0 10px;
+}
+
+.repères .container .monimos-box .monimos .img-box:hover .plus-info-box {
+    height: 70px;
+    font-size: .8em;
+}
+
+.flesh-up-box {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: #000;
+    overflow: hidden;
+    opacity: .1;
+}
+
+.flesh-up-box a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 9px;
+}
+
+.flesh-up-box i {
+    color: white;
+    font-size: 1.3em;
+
+}
+
+.flesh-up-box:hover:hover {
+    opacity: .7;
+
+}
+
+.flesh-up-box:hover i {
+    animation: flesh-up .3s linear infinite;
+    -webkit-animation: flesh-up .5s linear infinite;
+    padding-top: 3px;
+}
+@keyframes flesh-up {
+    0% {
+        translate: 0px;
+    } 100% {
+        translate: 0px -5px;
+    }
+}
+/* ----- End style pour toutes les pages ---- */
+
+
 @media screen and (min-width: 1440px) {
     main .bg {
         height: 500px;
+    }
+    main .bg-dubai {
     }
 }
 @media screen and (min-width: 1740px) {
@@ -41,9 +128,16 @@
 
     /* --- Start Plates Style --- */
     .plates .container .plates-box .plat .info-box {
-        width: 520px;
+        width: 100%;
     }
     /* --- End Plates Style --- */
+
+
+    /* --- Start Villes Style --- */
+    .villes .container .villes-box .ville .info-box {
+        width: 520px;
+    }
+    /* --- End Villes Style --- */
 
 }
 
@@ -77,13 +171,19 @@
 
     /* ----- Start Plates Style ----- */
     .plates .container .plates-box .plat .img-box {
-        width: 100%;
+    }
+    /* ----- End Villes Style ----- */
+
+
+    /* ----- Start Villes Style ----- */
+    .villes .container .villes-box .ville .img-box {
+        
     }
 
-    .plates .container .plates-box .plat .info-box {
+    .villes .container .villes-box .ville .info-box {
         width: 100%;
     }
-    /* ----- End Plates Style ----- */
+    /* ----- End Villes Style ----- */
 }
 
 
@@ -111,22 +211,92 @@
 
     /* --- Start Monimos Style --- */
     .repères .container .monimos-box .monimos {
-        width: 100%;
+        width: 75%;
     }
     
     .repères .container .monimos-box .monimos .img-box {
-        height: 450px;
+        height: 360px;
     }
 
     /* --- End Monimos Style --- */
+
+
+    /* ----- Start Villes Style ----- */
+    .villes .container .villes-box .ville {
+        width: 75%;
+    }
+
+    .villes .container .villes-box .ville .img-box {
+        
+    }
+
+    .villes .container .villes-box .ville .info-box {
+        width: 100%;
+    }
+    /* ----- End Villes Style ----- */
 }
 
 
 @media screen and (max-width: 578px) {
+    /* --- bg dubai --- */
+    main .bg-dubai {
+        height: 300px;
+    }
+
     /* --- style for all --- */
     .container {
         
     }
+
+
+    /* ----- Start Style Header ----- */
+    header {
+        height: 100px !important;
+    }
+
+    /* --- Start logo tyle --- */
+    header .container .logo-box {
+        width: 45px !important;
+        height: 100%;
+    }
+
+    header .container .logo-box a {
+        justify-content: space-between;
+    }
+
+    header .container .logo-box a img {
+        width: 100%;
+        filter: invert(100%);
+    }
+    /* --- End logo tyle --- */
+
+    header .container {
+        justify-content: center !important;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header .container .first-ul {
+        gap: 20px !important;
+    }
+
+    header .container .first-ul .first-li::after {
+        height: 12px !important;
+    }
+
+    header .container .first-ul .first-li span {
+        font-size: .9em;
+    }
+    
+
+    header .container .first-ul .first-li .second-ul {
+        translate: 0 12px !important;
+    }
+    
+
+    /* ----- End Style Header ----- */
+
+
     /* --- For Title h2 --- */
     :is(.title-box) h2 {
         padding: 10px 5px !important;
@@ -161,11 +331,28 @@
     /* -- End Présentation Style -- */
 
     /* --- Start Monimos Style --- */
+    .repères .container .monimos-box .monimos {
+        width: 100%;
+    }
+
     .repères .container .monimos-box .monimos .img-box {
         height: 300px;
     }
-
     /* --- End Monimos Style --- */
+
+
+    /* ----- Start Plates Style ----- */
+    .plates .container .plates-box .plat .img-box {
+        width: 100%;
+    }
+    /* ----- End Villes Style ----- */
+
+
+    /* ----- Start Villes Style ----- */
+    .villes .container .villes-box .ville .img-box {
+        width: 100%;
+    }
+    /* ----- End Villes Style ----- */
 }
 
 
@@ -183,6 +370,13 @@
 
 
     /* -- End Présentation Style -- */
+
+
+    /* ----- Start Villes Style ----- */
+    .villes .container .villes-box .ville {
+        width: 100%;
+    }
+    /* ----- End Villes Style ----- */
 }
 
 
@@ -235,4 +429,144 @@
     }
 
     /* --- End Monimos Style --- */
+}
+
+
+@media screen and (max-width: 280px) {
+    /* --- style for all --- */
+    .container {
+        
+    }
+    /* -- Start Header Style -- */
+    
+    /* -- End Header Style -- */
+
+
+    /* -- Start Présentation Style -- */
+
+
+    /* -- End Présentation Style -- */
+    
+    /* --- Start Monimos Style --- */
+    .repères .container .monimos-box .monimos .img-box {
+        height: 160px;
+    }
+    
+    .repères .container .monimos-box .monimos .img-box:hover .plus-info-box {
+        height: 50px;
+        font-size: .6em;
+    }
+    
+    .repères .container .monimos-box .monimos .img-box .plus-info-box p {
+        padding: 7px 0 0 10px;
+    }
+    /* --- End Monimos Style --- */
+}
+
+
+
+/* --------------- Style Header ---------------- */
+header {
+    width: 100%;
+    background: #424242;
+    height: 80px;
+    color: white;
+}
+
+header .container {
+    justify-content: space-between;
+}
+
+/* --- Start logo tyle --- */
+header .container .logo-box {
+    width: 60px;
+    height: 100%;
+}
+
+header .container .logo-box a {
+    justify-content: space-between;
+}
+
+header .container .logo-box a img {
+    width: 100%;
+    filter: invert(100%);
+}
+/* --- End logo tyle --- */
+
+header .container .first-ul {
+    gap: 30px;
+}
+
+header .container .first-ul .acceill-li a span {
+    color: white;
+}
+
+header .container .first-ul .first-li {
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    position: relative;
+    height: 20px;
+}
+
+header .container .first-ul .first-li .second-ul {
+    display: none;
+    background-color: rgb(38, 40, 40);
+    top: 45.9px;
+    left: 0;
+    width: 100%;
+    translate: 0 30px;
+}
+
+header .container .first-ul .first-li .second-ul .second-li {
+    background-color: inherit;
+    position: relative;
+    height: 40px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header .container .first-ul .first-li .second-ul .second-li .last-ul {
+    background-color: inherit;
+    display: none;
+    position: absolute;
+    right: 100%;
+    top: 0%;
+}
+
+header .container .first-ul .first-li .second-ul .second-li .last-ul .last-li {
+    text-align: center;
+    height: 40px;
+    min-width: 100%;
+}
+
+header .container .first-ul .first-li .second-ul .second-li .last-ul .last-li a {
+    display: block;
+    color: white;
+    padding: 10px;
+}
+
+/* ----- hover menu ----- */
+header .container .first-ul .first-li::after {
+    position: absolute;
+    content: "";
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 30px;
+}
+header .container .first-ul .first-li:hover .second-ul {
+    display: block;
+}
+
+header .container .first-ul .first-li .second-ul .second-li:hover {
+    background-color: rgb(81, 77, 71);
+}
+
+header .container .first-ul .first-li .second-ul .second-li:hover .last-ul {
+    display: block;
+}
+
+header .container .first-ul .first-li .second-ul .second-li .last-ul .last-li:hover {
+    background: #000;
 }
