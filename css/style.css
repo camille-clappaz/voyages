@@ -142,7 +142,7 @@ header .container .sousmenu {
   left: 100%;
   min-width: fit-content;
   z-index: 1;
-  height: 100%;
+  min-height: 100%;
 }
 
 header .container .sousmenu a {
