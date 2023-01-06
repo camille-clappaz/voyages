@@ -24,7 +24,7 @@ main{
 .message-orange {
     position: relative;
     margin-bottom: 10px;
-    margin-left: calc(100% - 240px);
+    margin-left: 100px;
     padding: 10px;
     background-color: #f8e896;
     width: 200px;
@@ -293,7 +293,49 @@ h1{
     bottom: -1px;
     right: -17px;
 }
-
+/* arrivee GANDIA */
+.arriveegandia{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    padding: 4px;
+}
+.imghotel{
+    width: 45%;
+}
+.hotelgandia {
+    display: flex;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+}
+.hotelgandia iframe{
+    max-height: 100%;
+    width: auto;
+}
+.bronzette{
+    display: flex;
+}
+.plage{
+    display: flex;
+    width: 100%;
+    padding: 2%;
+}
+.bronzette {
+    max-width: 100%;
+}
+.soiree2{
+    width: 100%;
+    display: flex;
+    padding: 2%;
+}
+.fete2{
+    max-width: 80%;
+    margin: 2%;
+}
+.gandia2{
+    padding: 2%;
+}
 
 
 
