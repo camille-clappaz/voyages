@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,200&family=Raleway:ital,wght@0,300;0,700;1,600&display=swap');
+:root{
+    --nunito:"Nunito";
+}
+body{
+    font-family: var(--nunito);
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+main{
+  background-image: url(/camille/img/mer.webp);
+}
+/* titre */
+main>h1{
+  text-align: center;
+  font-size: 100px;
+  filter: opacity(50%);
+}
+/* card qui se retourne */
+.box {
+  background-color: transparent;
+  width: 400px;
+  height: 500px;
+  perspective: 1000px;
+  margin: 20px;
+}
+.box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  
+}
+.box:hover .box-inner {
+  transform: rotateY(180deg);
+}
+.box-front,
+.box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+/* .box-front {
+  background-color: #cccccc;
+  color: #111111;
+} */
+.box-back {
+  background-color:#ebddd1;
+  color: black;
+  transform: rotateY(180deg);
+}
+.box-front img{
+  flex-shrink: 1;
+  max-width: 400px;
+  max-height: 500px;
+  border-radius: 10px;
+}
+.cards{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
