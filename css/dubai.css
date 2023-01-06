@@ -310,12 +310,14 @@ main .bg-dubai {
     text-align: center;
     margin: auto;
     padding: 10px;
+    
 }
 
 .villes .container .villes-box {
     line-height: 1.6;
     justify-content: flex-start;
     gap: 30px;
+    width: 100%;
 }
 
 .villes .container .villes-box .ville {

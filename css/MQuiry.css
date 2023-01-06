@@ -73,6 +73,7 @@ body {
     -webkit-animation: flesh-up .5s linear infinite;
     padding-top: 3px;
 }
+
 @keyframes flesh-up {
     0% {
         translate: 0px;
@@ -84,6 +85,9 @@ body {
 
 
 @media screen and (min-width: 1440px) {
+    header .container .subnav .subnava {
+        font-size: 1.6em;
+    }
     main .bg {
         height: 500px;
     }
@@ -154,7 +158,9 @@ body {
     }
 
     /* -- Start Header Style -- */
-    
+    header .container .navbar {
+        gap: 30px;
+    }
     /* -- End Header Style -- */
 
 
@@ -194,6 +200,15 @@ body {
         width: 100% !important;
     }
     /* -- Start Header Style -- */
+    header .container {
+        flex-direction: column !important;
+        align-items: center;
+        gap: 30px;
+    }
+
+    header .container .subnav .subnava {
+        font-size: 1em;
+    }
     
     /* -- End Header Style -- */
 
@@ -251,10 +266,27 @@ body {
     /* ----- Start Style Header ----- */
     /* header {
         height: 100px !important;
+    } */
+    header .container {        
+        
     }
 
+    header .container .navbar {        
+
+    }
+    
+    header .container .navbar .menu {
+        
+    }
+    
+    header .container .menu .subnav:first-child:hover {
+
+    }
+    header .container .recherche {
+        display: none;
+    }
     /* --- Start logo tyle --- */
-    header .container .logo-box {
+    /* header .container .logo-box {
         width: 45px !important;
         height: 100%;
     }
@@ -266,10 +298,12 @@ body {
     header .container .logo-box a img {
         width: 100%;
         filter: invert(100%);
-    }
+    } */
+
     /* --- End logo tyle --- */
 
-    header .container {
+
+    /* header .container {
         justify-content: center !important;
         flex-direction: column;
         gap: 10px;
@@ -290,7 +324,8 @@ body {
 
     header .container .first-ul .first-li .second-ul {
         translate: 0 12px !important;
-    } */
+    } */ 
+
     /* ----- End Style Header ----- */
 
 
@@ -335,6 +370,7 @@ body {
     .repères .container .monimos-box .monimos .img-box {
         height: 300px;
     }
+
     /* --- End Monimos Style --- */
 
 

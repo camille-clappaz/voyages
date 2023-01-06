@@ -52,40 +52,71 @@ header {
 }
 
 header .container {
-  align-items: flex-start;
   justify-content: space-between;
-  height: 80px;
+  min-height: 80px;
 }
 
+/* ------ Start Logo Style ------ */
+header .container .logo-box {
+  width: auto;
+  height: 50px;
+}
+
+header .container .logo-box a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+header .container .logo-box .logo {
+  filter: invert(100%);
+  width: auto;
+  height: 100%;
+}
+
+header .container .logo-box .logo:hover {
+  filter: invert(0%);
+}
+
+/* ------ End Logo Style ------ */
 
 /* ------ Start Style Menu ----- */
-.navbar {
+header .container .navbar {
   height: 100%;
+  gap: 80px;
 }
-.navbar ul {
-  gap: 150px;
+header .container .navbar .menu {
+  gap: 50px;
   height: 100%;
 }
 
-.subnav {
-  overflow: hidden;
-  float: left;
+header .container .subnav {
+  position: relative;
 }
 
-.subnav .subnava {
-  font-size: 1.3em;
+header .container .subnav:hover::after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  height: 30px;
+  width: 100%;
+}
+
+header .container .subnav .subnava {
+  font-size: 1.2em;
   color: white;
   font-weight: bold;
 }
 
-.subnav-content {
+header .container .subnav-content {
   display: none;
   position: absolute;
-  min-width: 160px;
   z-index: 1;
+  top: 40px;
 }
 
-.subnav-content a {
+header .container .subnav-content a {
   float: none;
   color: white;
   padding: 12px 16px;
@@ -95,10 +126,8 @@ header .container {
 }
 
 
-.subnava2 {
+header .container .subnava2 {
   font-size: 16px;
-  border: none;
-  outline: none;
   color: white;
   padding: -16px -16px;
   background-color: inherit;
@@ -106,32 +135,33 @@ header .container {
   margin: 0;
 }
 
-.sousmenu {
+header .container .sousmenu {
   display: none;
   position: absolute;
-  margin-left: 1px;
   top: 1%;
   left: 100%;
   min-width: fit-content;
   z-index: 1;
+  height: 100%;
 }
 
-.sousmenu a {
+header .container .sousmenu a {
   float: left;
   text-decoration: none;
   display: block;
   text-align: left;
+  width: 100%;
 }
 
-.subnav:hover .subnav-content {
+header .container .subnav:hover .subnav-content {
     display: block;
 
 }
 
-.subnav .subnav-content-subnav:hover .sousmenu {
+header .container .subnav .subnav-content-subnav:hover .sousmenu {
   display: block;
 }
-.subnava2:hover, .sousmenu a:hover{
+header .container .subnava2:hover, header .container  .sousmenu a:hover{
   background-color: white;
   color:  #bf9858;
 }
@@ -143,7 +173,7 @@ header .container .recherche {
   height: 100%;
 }
 
-.rch-forme {
+header .container .rch-forme {
   height: 30px;
   color: white;
   margin: 1px;
@@ -161,15 +191,6 @@ header .container .recherche input[type="text"] {
 /* ----- End Style bar de recherche ----- */
 
 
-.logo {
-  filter: invert(100%);
-  width: 5vw;
-  height: auto;
-}
-
-.logo:hover {
-  filter: invert(0%);
-}
 /* MAIN INDEX */
 .citation{
   text-align: center;
