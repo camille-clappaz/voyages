@@ -295,6 +295,11 @@ body {
 
     /* ----- End Style Header ----- */
 
+    /* ------ start main index style ------- */
+    .citation {
+        margin: 25vh 10vh;
+    }
+    /* ------ start main index style ------- */
 
     /* --- For Title h2 --- */
     :is(.title-box) h2 {
@@ -393,6 +398,12 @@ body {
     
     /* -- End Header Style -- */
 
+    /* ------ start main index style ------- */
+    .citation {
+        font-size: 1.6em;
+        margin: 15vh 5vh;
+    }
+    /* ------ start main index style ------- */
 
     /* -- Start Présentation Style -- */
 
