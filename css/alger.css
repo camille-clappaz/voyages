@@ -49,7 +49,7 @@ li {
     position: absolute;
     content: "";
     background-color: #2196F3;
-    top: calc(50% - 8px);
+    top: calc(50% - 8px); 
     width: 16px;
     height: 16px;
     border-radius: 50%;
@@ -159,12 +159,13 @@ li {
 /* ----- End Header Style ----- */
 
 /* -------- background -------- */
-main .bg-dubai {
-    background-image: url("../img/bg-dubai.jpg");
+main .bg {
+    background-image: url("../wahil/assets/img/bg-algérie.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 430px;
+    height: 350px;
+    margin-top: 20px;
 }
 
 /* ----- Start Présentation  Style ----- */
@@ -295,30 +296,30 @@ main .bg-dubai {
 /* ----- End Monimos Style ----- */
 
 
-/* ----- Start Villes Style ----- */
-.villes {
+/* ----- Start Plates Style ----- */
+.plates {
     width: 100%;
 }
 
-.villes .container {
+.plates .container {
     align-items: flex-start;
     margin: 30px auto;
     gap: 30px;
 }
 
-.villes .container .title-box {
+.plates .container .title-box {
     text-align: center;
     margin: auto;
     padding: 10px;
 }
 
-.villes .container .villes-box {
+.plates .container .plates-box {
     line-height: 1.6;
     justify-content: flex-start;
     gap: 30px;
 }
 
-.villes .container .villes-box .ville {
+.plates .container .plates-box .plat {
     align-items: flex-start;
     justify-content: flex-start;
     width: 100%;
@@ -326,20 +327,20 @@ main .bg-dubai {
 
 }
 
-.villes .container .villes-box .ville .img-box {
+.plates .container .plates-box .plat .img-box {
     width: 400px;
     margin-top: 10px;
 }
 
-.villes .container .villes-box .ville .img-box img {
+.plates .container .plates-box .plat .img-box img {
     width: 100%;
 }
 
-.villes .container .villes-box .ville .info-box {
+.plates .container .plates-box .plat .info-box {
     width: 600px;
 }
 
-.villes .container .villes-box .ville .info-box p:nth-child(2) {
+.plates .container .plates-box .plat .info-box p:nth-child(2) {
     margin: 10px 0;
 }
 

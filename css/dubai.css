@@ -49,7 +49,7 @@ li {
     position: absolute;
     content: "";
     background-color: #2196F3;
-    top: calc(50% - 8px); 
+    top: calc(50% - 8px);
     width: 16px;
     height: 16px;
     border-radius: 50%;
@@ -159,13 +159,12 @@ li {
 /* ----- End Header Style ----- */
 
 /* -------- background -------- */
-main .bg {
-    background-image: url("../img/bg-algérie.png");
+main .bg-dubai {
+    background-image: url("../wahil/assets/img/bg-dubai.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 350px;
-    margin-top: 20px;
+    height: 430px;
 }
 
 /* ----- Start Présentation  Style ----- */
@@ -296,30 +295,32 @@ main .bg {
 /* ----- End Monimos Style ----- */
 
 
-/* ----- Start Plates Style ----- */
-.plates {
+/* ----- Start Villes Style ----- */
+.villes {
     width: 100%;
 }
 
-.plates .container {
+.villes .container {
     align-items: flex-start;
     margin: 30px auto;
     gap: 30px;
 }
 
-.plates .container .title-box {
+.villes .container .title-box {
     text-align: center;
     margin: auto;
     padding: 10px;
+    
 }
 
-.plates .container .plates-box {
+.villes .container .villes-box {
     line-height: 1.6;
     justify-content: flex-start;
     gap: 30px;
+    width: 100%;
 }
 
-.plates .container .plates-box .plat {
+.villes .container .villes-box .ville {
     align-items: flex-start;
     justify-content: flex-start;
     width: 100%;
@@ -327,20 +328,20 @@ main .bg {
 
 }
 
-.plates .container .plates-box .plat .img-box {
+.villes .container .villes-box .ville .img-box {
     width: 400px;
     margin-top: 10px;
 }
 
-.plates .container .plates-box .plat .img-box img {
+.villes .container .villes-box .ville .img-box img {
     width: 100%;
 }
 
-.plates .container .plates-box .plat .info-box {
+.villes .container .villes-box .ville .info-box {
     width: 600px;
 }
 
-.plates .container .plates-box .plat .info-box p:nth-child(2) {
+.villes .container .villes-box .ville .info-box p:nth-child(2) {
     margin: 10px 0;
 }
 
