@@ -45,7 +45,7 @@ width: 450px;
     border-radius: 50%;
     display: inline-block;
     left: 825px;
-    top: 825px;
+    top: 800px;
   }
   .cliff{
     position: absolute;
@@ -55,7 +55,7 @@ width: 450px;
     border-radius: 50%;
     display: inline-block;
     left: 575px;
-    top: 875px;
+    top: 850px;
   }
   .geant{
     position: absolute;
@@ -65,7 +65,7 @@ width: 450px;
     border-radius: 50%;
     display: inline-block;
     left: 800px;
-    top: 580px;
+    top: 560px;
   }
   .bar{
     position: absolute;
@@ -75,7 +75,7 @@ width: 450px;
     border-radius: 50%;
     display: inline-block;
     left: 835px;
-    top: 825px;
+    top: 815px;
   }
   .college{
     position: absolute;
@@ -85,5 +85,96 @@ width: 450px;
     border-radius: 50%;
     display: inline-block;
     left: 825px;
-    top: 835px;
+    top: 810px;
   }
+  /* card qui apparaissent en hover */
+  .box-inner {
+    display: none;
+  }
+
+  .guinness:hover .box-inner{
+    display: block;
+    border: solide 2px black;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #ffefbc;
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;
+    margin: 20px;
+    border-radius: 10px;
+  }
+
+  .bar:hover .box-inner{
+    display: block;
+    border: solide 2px black;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #ffefbc;
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;
+    margin: 20px;
+  }
+  .cliff:hover .box-inner{
+    display: block;
+    border: solide 2px black;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #ffefbc;
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;
+    margin: 20px;
+    border-radius: 10px;
+  }
+  .geant:hover .box-inner{
+    display: block;
+    border: solide 2px black;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #ffefbc;
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;
+    margin: 20px;
+  }
+  .college:hover .box-inner{
+    display: block;
+    border: solide 2px black;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #ffefbc;
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;
+    margin: 20px;
+    border-radius: 10px;
+  }
+ .texte{
+  font-size: 10px;
+ }
+ .box{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: transparent;
+  width: 400px;
+  height: 300px;
+  perspective: 1000px;
+  margin: 20px;
+  border-radius: 10px;
+ }
